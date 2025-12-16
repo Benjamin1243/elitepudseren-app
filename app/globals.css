@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e7ecef;
+  --foreground: #1b263b;
+  --darkblue: #0a233f;
+ 
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-darkblue: var(--darkblue);
+  --color-foreground: var(--foreground);
+ 
+  --font-roboto:  var(--font-roboto);
+  --font-open-sans: var(--font-openSans);
+  --font-norge: var(--font-norge);
+  
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  
+}
