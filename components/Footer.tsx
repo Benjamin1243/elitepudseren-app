@@ -38,7 +38,7 @@ export default async function Footer(){
                 )
 
             })}
-            <img className=" h-80 ml-auto" src={process.env.NEXT_PUBLIC_API_LOCATION! + footerLogo?.data?.[0]?.logo?.url } alt="" />
+            <img className=" h-40 ml-auto" src={  footerLogo?.data?.[0]?.logo?.url } alt="" />
         </footer>
     )
 }

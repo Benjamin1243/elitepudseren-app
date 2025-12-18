@@ -30,7 +30,7 @@ const data = await fetcher<Data>("sites?populate[textBackgroundSection][populate
 
     
     return(
-        <section id="story" className=" my-20  h-[80vh] " style={{backgroundImage :`url(${data.data[0].local ?  data.data?.[0].textBackgroundSection?.image?.url :  data.data?.[0].textBackgroundSection?.image?.url});`}}>
+        <section id="story" className=" mt-20   " style={{backgroundImage :`url(${data.data[0].local ?  data.data?.[0].textBackgroundSection?.image?.url :  data.data?.[0].textBackgroundSection?.image?.url});`}}>
             <div className=" bg-black/50 backdrop-blur h-full p-10 py-20 text-center text-white">
             {data.data?.[0]?.textBackgroundSection?.text?.map((text: Text, index: number)=>{
                                 if(text.type == "heading"){
