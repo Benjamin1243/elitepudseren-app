@@ -42,7 +42,7 @@ export default async function TextImageSection(){
                 })}
                 <p className=" text-darkblue font-bold ml-2"> - Lucas er en certificeret vinduespudser </p>
             </div>
-            <img className=" row-start-1 md:col-start-2 w-full object-cover rounded-2xl max-h-200 aspect-square " src={data.data[0].local? data.data[0].textImageSection.image.url : process.env.NEXT_PUBLIC_API_LOCATION! +data.data?.[0]?.textImageSection?.image?.url} alt="" />
+            <img className=" row-start-1 md:col-start-2 w-full object-cover rounded-2xl max-h-200 aspect-square " src={data.data[0].local? data.data[0].textImageSection.image.url : data.data?.[0]?.textImageSection?.image?.url} alt="" />
             
         </section>
 

@@ -12,13 +12,13 @@ const url = process.env.NEXT_PUBLIC_API_LOCATION! + "/api/"
 const reponse = await fetch(url + paramUrl, body )
 
 const data = await reponse.json();
-console.log( "reposnde" , data.data[0])
+
 if(!data.data[0]) throw new Error("intet data")
    return data
 
    }
 catch(error){
-   console.log(error)
+   
    return fallbackData as Data<T>
 
 
