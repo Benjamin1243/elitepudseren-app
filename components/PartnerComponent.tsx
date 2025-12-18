@@ -4,6 +4,6 @@ type Props ={
 
 export default function PartnerComponent({url}: Props){
 
-    return(<img className=" grayscale-100 h-40 w-full object-cover rounded-lg" src={ url} alt="" />)
+    return(<img className=" grayscale-100 w-full object-cover w-[33%] aspect-square rounded-lg" src={ url} alt="" />)
     
 }

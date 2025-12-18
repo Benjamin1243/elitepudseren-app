@@ -31,7 +31,7 @@ export default function Header(){
         <header>
             <nav>
     
-        <ul className=" flex gap-8 px-3 fixed z-100 w-full  flex-row justify-center font-roboto text-base bg-darkblue text-white py-2 pr-[10vw]   " >  
+        <ul className=" flex gap-8 px-10 fixed z-100 w-full  flex-row justify-center font-roboto text-base bg-darkblue text-white py-2 md:pr-[10vw]   " >  
             <li className=" mr-auto" > <Link  href={"/"} className=" font-black font-sans z-50 mr-auto "><img className=" max-w-20  " src={ data?.data?.[0].logo?.url} alt="" /></Link></li>
             {data?.data?.[0].link?.map((link: Link)=>{
                 

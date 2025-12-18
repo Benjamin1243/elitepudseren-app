@@ -29,7 +29,7 @@ export default async function Footer(){
     const footerLogo = await fetcher<FooterLogo>("footers?populate[logo][populate]=*")
          console.log(footerLogo)
     return(
-        <footer className=" bg-darkblue w-full flex flex-wrap p-20  gap-[10%]">
+        <footer className=" bg-darkblue w-full  flex grid-rows-1 p-20 flex-wrap  gap-[10%]">
         
             {data.data?.[0].footerList?.map((list)=>{
                 console.log(list)
@@ -38,7 +38,7 @@ export default async function Footer(){
                 )
 
             })}
-            <img className=" h-40 ml-auto" src={  footerLogo?.data?.[0]?.logo?.url } alt="" />
+            <img className=" aspect-square  w-[20%] md:ml-auto" src={  footerLogo?.data?.[0]?.logo?.url } alt="" />
         </footer>
     )
 }
