@@ -31,9 +31,9 @@ const data = await fetcher<HeroData>(
 
 console.log("Image data", data)
     return( 
-        <div className={`  grid h-screen sm:h-[90vh] bg-cover bg-center h-64    md:[clip-path:polygon(0_0,100%_0,100%_85%,0_100%)]`} style={{backgroundImage: `url("${ data.data[0].local ? data.data?.[0].hero.backgroundImg.url: data.data?.[0].hero.backgroundImg.url}")`}}>
+        <div className={`  grid h-screen sm:h-[90vh] bg-cover bg-center h-64    md:[clip-path:polygon(0_0,100%_0,100%_85%,0_100%)]  `} style={{backgroundImage: `url("${ data.data[0].local ? data.data?.[0].hero.backgroundImg.url: data.data?.[0].hero.backgroundImg.url}")`}}>
             <div className=" z-[1] blur-1xl bg-black opacity-50 col-span-full row-span-full"></div>
-            <div className=" ml-10 col-span-full row-span-full z-10 self-center  max-w-[90%] md:max-w-[45%]">
+            <div className=" ml-10 col-span-full row-span-full z-10 self-center  max-w-[90%] md:max-w-[45%] 2xl:max-w-wrapperMax 2xl:w-[98%] 2xl:mx-auto">
             <h1 className="  text-background text-5xl md:text-6xl ">{data.data?.[0]?.hero?.overskrift}</h1>
             <p className=" text-background max-w-[80%] mt-5"> {data.data?.[0].hero.underskrift}</p>
             <div  className=" flex gap-5 mt-3.5">

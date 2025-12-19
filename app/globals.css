@@ -1,9 +1,9 @@
 @import "tailwindcss";
-
+/* 0a233f */
 :root {
   --background: #e7ecef;
   --foreground: #1b263b;
-  --darkblue: #0a233f;
+  --darkblue: #0d2f56;
  
 }
 
@@ -11,10 +11,11 @@
   --color-background: var(--background);
   --color-darkblue: var(--darkblue);
   --color-foreground: var(--foreground);
- 
+ --animate-wiggle: wiggle 1s ease-in-out infinite;
   --font-roboto:  var(--font-roboto);
   --font-open-sans: var(--font-openSans);
   --font-norge: var(--font-norge);
+  --spacing-wrapperMax: 1900px
   
 }
 
@@ -27,3 +28,14 @@ body {
   color: var(--foreground);
   
 }
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+

@@ -29,7 +29,7 @@ export default async function Footer(){
     const footerLogo = await fetcher<FooterLogo>("footers?populate[logo][populate]=*")
          console.log(footerLogo)
     return(
-        <footer className=" bg-darkblue w-full  flex grid-rows-1 p-20 flex-wrap  gap-[10%]">
+        <footer id="footer" className=" bg-darkblue w-full  flex grid-rows-1 p-20 flex-wrap  gap-[10%]">
         
             {data.data?.[0].footerList?.map((list)=>{
                 console.log(list)

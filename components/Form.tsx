@@ -13,7 +13,7 @@ interface Inputs {
 
 export default function Form({inputs} : Inputs){
     return(
-        <form  className=" w-[90%] m-auto mt-[-20vh]  relative z-10  bg-background flex flex-col md:absolute md:w-5/12 md:top-8/12 md:right-[2vw] rounded-md p-10 gap-5 shadow-xl  shadow-black" >
+        <form  className=" max-w-[800px] w-[90%] m-auto mt-[-20vh]  relative z-10  bg-background flex flex-col md:absolute md:w-5/12 md:top-8/12 md:right-[2vw] rounded-md p-10 gap-5 shadow-xl  shadow-black" >
             <h2 className=" text-2xl text-foreground font-bold font-roboto "> Kontakt os</h2>
             {
             inputs.map((input: InputType, index)=>{
